@@ -1,13 +1,13 @@
 package residencia.clases;
 
-/**
+/**	
+ * Esta clase define a las diferentes personas con las que vamos a trabajar en nuestra residencia
+ * 
  * @author Gorka
- *
+ * @version 2.0
  */
-public class Personas {
+public abstract class Personas {
 	public String nombre;
-	public String apellidos;
-	public int edad;
 	public String DNI;
 	public String usuario;
 	public String contrasenia;
@@ -15,17 +15,13 @@ public class Personas {
 	/** 
 	 * Crea una nueva Persona con toda la documentación necesaria
 	 * @param nombre - Es el nombre de la persona
-	 * @param apellidos - Es el primer y segundo apellido de la persona
-	 * @param edad - Es la edad de la persona con valor de numero entero
 	 * @param DNI - Es el DNI de la persona
 	 * @param usuario - Es el usuario con el que iniciara sesión la persona
-	 * @param contrasenia - Es la contraseña vinculada con el usuario con la que iniciara sesión la persona
+	 * @param - Es la contraseña con la que iniciara sesion la persona
 	 */
-	public Personas(String nombre, String apellidos, int edad, String DNI, String usuario, String contrasenia) {
+	public Personas(String nombre,String DNI, String usuario, String contrasenia) {
 		super();
 		this.nombre = nombre;
-		this.apellidos = apellidos;
-		this.edad = edad;
 		this.DNI = DNI;
 		this.usuario = usuario;
 		this.contrasenia = contrasenia;
@@ -47,33 +43,6 @@ public class Personas {
 		this.nombre = nombre;
 	}
 
-	/**
-	 * @return - Devuelve un valor String que contiene los apellidos de la persona
-	 */
-	public String getApellidos() {
-		return apellidos;
-	}
-
-	/**
-	 * @param apellidos - Define un valor String que contiene los apellidos de la persona
-	 */
-	public void setApellidos(String apellidos) {
-		this.apellidos = apellidos;
-	}
-
-	/**
-	 * @return - Devuelve un valor int que contiene la edad de la persona
-	 */
-	public int getEdad() {
-		return edad;
-	}
-
-	/**
-	 * @param edad - Define un valor int que contiene la edad de la persona
-	 */
-	public void setEdad(int edad) {
-		this.edad = edad;
-	}
 
 	/**
 	 * @return - Devuelve un valor String que contiene el DNI de la persona
@@ -116,6 +85,14 @@ public class Personas {
 	public void setContrasenia(String contrasenia) {
 		this.contrasenia = contrasenia;
 	}
+	
+	/**
+	 * metodo abstracto que mostrara alguna informacion de la persona implementada en las clases hijas
+	 */
+	public abstract String mostrarInformacion();
+	
+	
+	
 	
 
 }

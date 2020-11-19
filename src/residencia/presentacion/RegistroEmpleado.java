@@ -20,7 +20,6 @@ public class RegistroEmpleado extends JFrame {
 	private JTextField usuario;
 	private JTextField contrasenia;
 	private JTextField dni;
-	private JTextField edad;
 	private JTextField Ocupacion;
 
 	/**
@@ -87,29 +86,20 @@ public class RegistroEmpleado extends JFrame {
 		contrasenia.setColumns(10);
 		
 		JLabel lblDni = new JLabel("DNI:");
-		lblDni.setBounds(15, 142, 69, 20);
+		lblDni.setBounds(15, 152, 69, 20);
 		contentPane.add(lblDni);
 		
-		JLabel lblEdad = new JLabel("Edad:");
-		lblEdad.setBounds(15, 178, 69, 20);
-		contentPane.add(lblEdad);
-		
 		dni = new JTextField();
-		dni.setBounds(109, 139, 146, 26);
+		dni.setBounds(109, 145, 146, 26);
 		contentPane.add(dni);
 		dni.setColumns(10);
 		
-		edad = new JTextField();
-		edad.setBounds(109, 175, 146, 26);
-		contentPane.add(edad);
-		edad.setColumns(10);
-		
-		JLabel lblOcupacion = new JLabel("Ocupaci\u00F3n:");
-		lblOcupacion.setBounds(15, 214, 95, 20);
-		contentPane.add(lblOcupacion);
+		JLabel lblFuncion = new JLabel("Funci\u00F3n:");
+		lblFuncion.setBounds(15, 188, 95, 20);
+		contentPane.add(lblFuncion);
 		
 		Ocupacion = new JTextField();
-		Ocupacion.setBounds(109, 211, 146, 26);
+		Ocupacion.setBounds(109, 185, 146, 26);
 		contentPane.add(Ocupacion);
 		Ocupacion.setColumns(10);
 		

@@ -12,6 +12,9 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
+/**
+ * Clase que muestra una ventana en la cual el estudiante podra registrarse metiendo sus datos, los cuales e guardaran en la base de datos
+ */
 public class RegistroEstudiante extends JFrame {
 
 	private JPanel contentPane;
@@ -20,7 +23,6 @@ public class RegistroEstudiante extends JFrame {
 	private JTextField usuario;
 	private JTextField contrasenia;
 	private JTextField dni;
-	private JTextField edad;
 
 	/**
 	 * Launch the application.
@@ -93,15 +95,6 @@ public class RegistroEstudiante extends JFrame {
 		dni.setBounds(122, 179, 146, 26);
 		contentPane.add(dni);
 		dni.setColumns(10);
-		
-		JLabel lblEdad = new JLabel("Edad:");
-		lblEdad.setBounds(15, 218, 69, 20);
-		contentPane.add(lblEdad);
-		
-		edad = new JTextField();
-		edad.setBounds(122, 215, 146, 26);
-		contentPane.add(edad);
-		edad.setColumns(10);
 		
 		JButton btnAceptar = new JButton("Aceptar");
 		btnAceptar.addActionListener(new ActionListener() {

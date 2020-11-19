@@ -10,6 +10,9 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
+/**
+ * Clase que muestra la ventana principal del programa y direcciona a las siguientes ventanas
+ */
 public class PaginaPrincipal extends JFrame {
 
 	private JPanel contentPane;

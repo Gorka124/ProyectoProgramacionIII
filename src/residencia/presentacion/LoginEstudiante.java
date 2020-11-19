@@ -1,6 +1,7 @@
 package residencia.presentacion;
 
 import java.awt.BorderLayout;
+
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -13,6 +14,9 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JPasswordField;
 
+/**
+ * Clase que permitira iniciar sesion al estudiante y poder acceder al menu correcpondiente 
+ */
 public class LoginEstudiante extends JFrame {
 
 	private JPanel contentPane;

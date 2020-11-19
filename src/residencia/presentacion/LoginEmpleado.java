@@ -14,6 +14,10 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JPasswordField;
 
+
+/**
+ * Clase que permitira iniciar sesion al trabajador y poder acceder al menu correcpondiente 
+ */
 public class LoginEmpleado extends JFrame {
 
 	private JPanel contentPane;
